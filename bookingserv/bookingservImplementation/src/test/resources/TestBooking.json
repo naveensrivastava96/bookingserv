@@ -1,0 +1,16 @@
+{
+  "first_name": "naveen",
+  "last_name": "srivastava",
+  "date_of_birth": 1629618508000,
+  "checkin_datetime": 1629704908000,
+  "checkout_datetime": 1629791308000,
+  "total_price": "3333.34",
+  "deposit": "2000",
+  "address":{
+    "line1":"line1 of address",
+    "line2":"line1 of address",
+    "city":"delhi",
+    "state":"delhi",
+    "zip_code": 110051
+  }
+}

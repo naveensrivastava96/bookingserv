@@ -1,0 +1,20 @@
+{
+  "title": "Error resource",
+  "description": "Error resource object",
+  "type": "object",
+  "properties": {
+    "type": {
+      "description": "type of error",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "errors": {
+      "description": "errors",
+      "type": "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}
