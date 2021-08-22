@@ -1,0 +1,31 @@
+
+Following major changes:
+1.There is one addition module for taking care of generation of model which i have seperated from given one.
+2.There we are using mapstruct for mapping between pojo and Entity 
+
+
+
+Please use the below two curl for apis
+
+TO CREATE : 
+curl --location --request POST 'http://localhost:8040/v1/bfs/booking' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "first_name": "naveen",
+    "last_name": "srivastava",
+    "date_of_birth": 1629618508000,
+    "checkin_datetime": 1629704908000,
+    "checkout_datetime": 1629791308000,
+    "total_price": "3333.34",
+    "deposit": "2300",
+    "address":{
+        "line1":"ln1 for address",
+        "line2":"ln2 for address",
+        "city":"Delhi",
+        "state":"Delhi",
+        "zip_code": 110058
+    }
+}'
+
+TO GET:
+curl --location --request GET 'http://localhost:8040/v1/bfs/bookings'
